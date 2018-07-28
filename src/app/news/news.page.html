@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let article of data?.articles">
+  <ion-card *ngFor="let article of data?.articles" (click)="onGoToNewsSinglePage(article)">
     <ion-img [src]="article.urlToImage"></ion-img>
 
     <ion-card-content>
